@@ -1,7 +1,6 @@
 package com.company;
 
 class My_Thread extends Thread{
-    @Override
     public void run(){
         while(true){
             System.out.println("Thread 1 is running");
