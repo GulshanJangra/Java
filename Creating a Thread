@@ -1,0 +1,25 @@
+package com.company;
+
+class My_Thread extends Thread{
+    @Override
+    public void run(){
+        while(true){
+            System.out.println("Thread 1 is running");
+        }
+    }
+}
+class My_Thread2 extends Thread{
+    public void run(){
+        while(true){
+            System.out.println("I am happy");
+        }
+    }
+}
+public class Multi_Threading {
+    public static void main(String[] args) {
+        My_Thread t1 = new My_Thread();
+        My_Thread2 t2 = new My_Thread2();
+        t1.start();
+        t2.start();
+    }
+}
