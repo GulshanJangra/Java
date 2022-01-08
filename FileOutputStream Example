@@ -1,0 +1,17 @@
+import java.io.FileOutputStream;
+
+class FileOutputStreamExample{
+    public static void main(String[] args) {
+        try{
+            FileOutputStream Fout = new FileOutputStream("testout.txt");
+            String s = "I am a FileOutputStream Program";
+            byte b[] = s.getBytes();
+            Fout.write(b);
+            Fout.close();
+            System.out.println("Success");
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+    }
+}
